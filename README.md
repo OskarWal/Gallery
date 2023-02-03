@@ -85,7 +85,7 @@ Edit user
 - Likes Picture
 - Search Picture
 - List of Liked Pictures
-- Alerts after all operation (add/edit/delete/search/login/logout)
+- Alerts after all operation (add/edit/delete/search/login/logout/comment/like)
 
 
 ## Endpoints
