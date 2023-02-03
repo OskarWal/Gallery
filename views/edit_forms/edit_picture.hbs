@@ -1,0 +1,77 @@
+{{!-- <form action="" method="post">
+    <label for="title"> Nazwa: </label>
+    <input type="text" id="title" name="title" value="{{ item.title }}"><br><br>
+    <label for="description"> Opis: </label>
+    <input type="text" id="description" name="description" value="{{ item.description }}"><br><br>
+    <label for="file_name"> Nazwa pliku: </label>
+    <input type="text" id="file_name" name="file_name" value="{{ item.file_name }}"><br><br>
+    <label for="size"> Rozmiar: </label>
+    <input type="number" id="size" name="size" value="{{ item.size }}"><br><br>
+    <label for="date"> Data: </label>
+    <input type="date" id="date" name="date" value="{{ item.date }}"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+ --}}
+                {{!-- <form action="/pictures/delete" method="post" style="display: inline;">
+                    <button class="btn btn-danger" type="submit" name="id" id="{{ item._id }}" value="{{ item._id }}"class="btn-link">Usuń zdjęcie</button>
+                </form> --}}
+
+<section class="vh-100">
+  <div class="container h-100 ">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card bg-secondary text-white" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Edycja zdjęcia</p>
+                <form class="mx-1 mx-md-4" action="" method="post">
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <div class="form-outline flex-fill mb-0">
+                        <label for="title" class="form-label"> Nazwa zdjęcia: </label>
+                        <input type="text" id="title" name="title" class="form-control" value="{{ item.title }}">
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <div class="form-outline flex-fill mb-0">
+                        <label for="description" class="form-label"> Opis: </label>
+                        <textarea type="text" id="description" name="description" class="form-control" value="{{ item.description }}">{{ item.description }}</textarea>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <div class="form-outline flex-fill mb-0">
+                        <label for="file_name" class="form-label"> Nazwa pliku: </label>
+                        <input type="text" id="file_name" name="file_name" class="form-control" value="{{ item.file_name }}">
+                    </div>
+                  </div>       
+                  
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <div class="form-outline flex-fill mb-0">
+                        <label for="path" class="form-label"> Ścieżka do pliku: </label>
+                        <input type="text" id="path" name="path" class="form-control" value="{{ item.path }}">
+                    </div>
+                  </div>     
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <div class="form-outline flex-fill mb-0">
+                        <label for="date" class="form-label"> Data dodania: </label>
+                        <input type="datetime" id="date" name="date" class="form-control" value="{{ item.date }}">
+                    </div>
+                  </div>                   
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="submit" value="Submit" class="btn btn-warning w-50">Zaktualizuj zdjęcie</button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

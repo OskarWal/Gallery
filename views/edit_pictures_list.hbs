@@ -1,0 +1,27 @@
+<div class="row row-cols-1 row-cols-md-2 g-4 ">
+{{#each items}}
+  <div class="col">
+    <div class="card h-100 bg-secondary text-white">
+        <a class="card-img-top h-100" href="/pictures/info/{{this._id}}"><img src="../{{ this.path }}/{{ this.file_name }}" class="card-img-top h-100" alt="image"> </a>
+        <div class="card-body">
+            <h4 class="card-title text-center">{{ this.title }}</h4>
+            <p class="card-text text-truncate">{{ this.description }}</p>
+        </div>
+        <div class="card-footer row row-cols-2">
+            <p class="card-text text-start">Polubienia: {{ this.like_count }}</p>
+            <p class="card-text text-end">Komentarze: {{ this.comment_count }}</p>
+                <a class="col text-end">
+                    <form action="/pictures/edit/{{this._id}}" method="get">
+                        <button  type="submit" class="btn btn-warning w-50">Edytuj</button>
+                    </form>  
+                </a>
+                <a class="col text-start">
+                    <form action="/pictures/delete/{{this._id}}" method="post">
+                        <button type="submit" class="btn btn-danger w-50">Usuń</button>
+                    </form>  
+                </a>
+        </div>
+    </div>
+  </div>
+{{/each}}
+</div>
