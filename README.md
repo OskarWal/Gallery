@@ -62,9 +62,6 @@ Edit picture form
 Edit picture alert
 ![Alt text](screenshots/alert_edit.PNG?raw=true "Title")
 
-Edit picture alert
-![Alt text](screenshots/alert_edit.PNG?raw=true "Title")
-
 Users list
 ![Alt text](screenshots/user_list.PNG?raw=true "Title")
 
